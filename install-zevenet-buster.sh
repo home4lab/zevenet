@@ -1,7 +1,7 @@
 echo ""
 echo " === INSTALL PACKAGE NEEDED === "
 echo ""
-apt install make gnupg
+apt install make gnupg git
 
 echo ""
 echo " === ADD NEW REPOSITORY TO SOURCE LIST === "
