@@ -13,3 +13,7 @@ ZEVENET CE web GUi uses cherokee for SSL implementation, please refer to the con
 vserver!1!ssl_certificate_file = /usr/local/zevenet/config/certificates/zencert.pem
 
 vserver!1!ssl_certificate_key_file = /usr/local/zevenet/config/certificates/zencert-c.key
+
+# references to setting lslb farm http profile
+
+https://www.zevenet.com/knowledge-base/enterprise-edition/enterprise-edition-v5-0-administration-guide/lslb-farms-update-http-profile/
