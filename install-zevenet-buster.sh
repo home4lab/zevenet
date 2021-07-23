@@ -6,7 +6,7 @@ apt install make gnupg git
 echo ""
 echo " === ADD NEW REPOSITORY TO SOURCE LIST === "
 echo ""
-echo "deb http://repo.zevenet.com/ce/v5/ buster main" >> /etc/apt/source.list
+echo "deb http://repo.zevenet.com/ce/v5/ buster main" >> /etc/apt/sources.list
 wget -O - http://repo.zevenet.com/zevenet.com.gpg.key | apt-key add -
 
 echo ""
