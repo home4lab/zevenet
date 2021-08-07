@@ -17,3 +17,7 @@ vserver!1!ssl_certificate_key_file = /usr/local/zevenet/config/certificates/zenc
 # references to setting lslb farm http profile
 
 https://www.zevenet.com/knowledge-base/enterprise-edition/enterprise-edition-v5-0-administration-guide/lslb-farms-update-http-profile/
+
+# plugins
+you can use farmguardians to check the backend connection
+location of plugin are in here >> /usr/lib/nagios/
