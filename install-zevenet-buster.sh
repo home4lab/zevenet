@@ -18,3 +18,8 @@ echo ""
 echo " === INSTALL ZEVENET === "
 echo ""
 apt install zevenet
+
+echo ""
+echo " === INSTALL ZEVENET GUI === "
+echo ""
+apt install zevenet-gui-ce
