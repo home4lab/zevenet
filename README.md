@@ -10,9 +10,10 @@ chmod +x install-zevenet-buster.sh
 
 ZEVENET CE web GUi uses cherokee for SSL implementation, please refer to the config file in the path /usr/local/zevenet/app/cherokee/etc/cherokee/cherokee.conf
 
-vserver!1!ssl_certificate_file = /usr/local/zevenet/config/certificates/zencert.pem
+    vserver!1!ssl_certificate_file = /usr/local/zevenet/config/certificates/zencert.pem
+    vserver!1!ssl_certificate_key_file = /usr/local/zevenet/config/certificates/zencert-c.key
 
-vserver!1!ssl_certificate_key_file = /usr/local/zevenet/config/certificates/zencert-c.key
+systemctl restart cherokee
 
 # references to setting lslb farm http profile
 
