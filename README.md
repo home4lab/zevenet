@@ -16,7 +16,34 @@ ZEVENET CE web GUi uses cherokee for SSL implementation, please refer to the con
 
 then, restart cherokee (web management zevenet)
 
-    systemctl restart cherokee
+    $systemctl restart cherokee
+
+
+# configure cluster (optional)
+
+install package for zevenet cluster
+
+    $apt install zevenet-ce-cluster
+    
+edit file /usr/local/zevenet/app/ucarp/etc/zevenet-cluster.conf and change the following variable:
+
+    $local_ip="your_master_ip";
+    $remote_ip="your_backup_ip";
+    $cluster_ip="your_virtual_ip_for_cluster";
+    
+    
+edit file /etc/init.d/zevenet-ce-cluster and change the following variable:
+
+    enable_cluster="true";
+    
+then enable cluster service for zevenet and restart cluster service
+
+    $systemctl enable zevenet-ce-cluster
+    $/etc/init.d/zevenet-ce-cluster stop
+    $/etc/init.d/zevenet-ce-cluster start
+    
+references:
+https://www.zevenet.com/knowledge-base/howtos/how-to-configure-a-cluster-in-zevenet-community-edition-v-5-0/
 
 # references to setting lslb farm http profile
 
