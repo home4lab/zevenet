@@ -41,7 +41,9 @@ then enable cluster service for zevenet and restart cluster service
     $systemctl enable zevenet-ce-cluster
     $/etc/init.d/zevenet-ce-cluster stop
     $/etc/init.d/zevenet-ce-cluster start
-    
+
+don't forget to add your virtual ip in zevenet web gui
+
 references:
 https://www.zevenet.com/knowledge-base/howtos/how-to-configure-a-cluster-in-zevenet-community-edition-v-5-0/
 
