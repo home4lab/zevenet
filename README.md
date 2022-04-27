@@ -26,8 +26,8 @@ first, create your ssh public key
 
 run from both of your server
 
-    ssh-keygen -t rsa
-    ssh-copy-id -i $HOME/.ssh/id_rsa.pub root@your_remote_ip
+    $ssh-keygen -t rsa
+    $ssh-copy-id -i $HOME/.ssh/id_rsa.pub root@your_remote_ip
 
 
 
