@@ -64,3 +64,13 @@ https://www.zevenet.com/knowledge-base/enterprise-edition/enterprise-edition-v5-
 # plugins
 you can use farmguardians to check the backend connection
 location of plugin are in here >> /usr/lib/nagios/
+
+# zcli
+farm list
+
+
+network-virtual create -ip <ip> -name eth0:<name>
+
+farm create -farmname bts -vip <virtual-ip> -profile http -vport <virtual-port>
+farm set <farm-name> -listener https
+
